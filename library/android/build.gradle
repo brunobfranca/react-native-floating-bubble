@@ -13,14 +13,12 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 30
+    buildToolsVersion = "30.0.2"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion 23
+        targetSdkVersion 30
     }
     lintOptions {
         abortOnError false
@@ -39,7 +37,7 @@ allprojects {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
+    api 'com.facebook.react:react-native:+'
     //compile 'com.txusballesteros:bubbles:1.2.1',
     implementation 'com.github.txusballesteros:bubbles-for-android:develop-SNAPSHOT'
 }

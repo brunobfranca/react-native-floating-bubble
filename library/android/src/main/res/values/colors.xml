@@ -29,7 +29,6 @@
     <color name="grey_dark_2">#333333</color>
     <color name="navigation">#222222</color>
     <color name="grey_dark_2_opacity_25">#40333333</color>
-    <color name="black">#000000</color>
     <color name="black_opacity_25">#40000000</color>
     <color name="black_opacity_66">#99000000</color>
 
@@ -58,5 +57,33 @@
     <color name="highlight_on_dark_grey">#333333</color>
     <color name="highlight_on_light_grey">#DDDDDD</color>
     <color name="gray_separator">#dadada</color>
+
+    <color name="colorPrimary">#283c64</color>
+    <color name="colorPrimaryDark">#656565</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="fontColorWrite">#FFFFFF</color>
+    <color name="backgroundWrite">#FFFFFF</color>
+    <color name="colorOnSwitch">#8BBD4E</color>
+    <color name="colorBackgroundOnSwitch">#5C7C33</color>
+
+    <color name="black__0">#00000000</color>
+    <color name="black__10">#14000000</color>
+    <color name="black__30">#4D000000</color>
+    <color name="black__40">#66000000</color>
+    <color name="black__50">#80000000</color>
+    <color name="black__60">#99000000</color>
+    <color name="black__70">#b3000000</color>
+    <color name="black__80">#cc000000</color>
+    <color name="black__90">#E6000000</color>
+
+    <color name="silver">#dee1e4</color>
+
+    <color name="red">#a11212</color>
+    
+    <color name="colorFontDescription">#707582</color>
+    <color name="colorFontSubDescription">#9C9C9C</color>
+    <color name="colorViewGrey">#f5f5f0</color>
+    <color name="colorSupportDescription">#CCCCCC</color>
+    <color name="colorToolbarInativeOrOffline">#999999</color>
 
 </resources>

@@ -17,6 +17,9 @@ import android.view.View;
 import android.content.Intent;
 import android.provider.Settings;
 import android.net.Uri;
+import android.widget.ImageView;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.txusballesteros.bubbles.BubbleLayout;
 import com.txusballesteros.bubbles.BubblesManager;
@@ -27,7 +30,10 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
   private BubblesManager bubblesManager;
   private final ReactApplicationContext reactContext;
   private BubbleLayout bubbleView;
-
+  private ImageView btnClose;
+  private Button btn1;
+  private TextView text1;
+  private TextView text2;
   public RNFloatingBubbleModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
@@ -39,6 +45,10 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     // }
   }
 
+  @Override
+  public String getName() {
+    return "RNFloatingBubble";
+  }
   @ReactMethod
   public void reopenApp(){
     Intent launchIntent = reactContext.getPackageManager().getLaunchIntentForPackage(reactContext.getPackageName());
@@ -46,19 +56,22 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
       reactContext.startActivity(launchIntent);
     }
   }
-
-  @Override
-  public String getName() {
-    return "RNFloatingBubble";
-  }
-
   @ReactMethod // Notates a method that should be exposed to React
-  public void showFloatingBubble(int x, int y, final Promise promise) {
+  public void showFloatingBubble(double x, double y, final Promise promise) {
     try {
       this.addNewBubble(x, y);
       promise.resolve("");
     } catch (Exception e) {
-      promise.reject("");
+      promise.reject(e);
+    }
+  }  
+  @ReactMethod // Notates a method that should be exposed to React
+  public void showFeedBackFloating(double x, double y, final Promise promise) {
+    try {
+      this.addNewBubble(x, y);
+      promise.resolve("");
+    } catch (Exception e) {
+      promise.reject(e);
     }
   }  
 
@@ -99,7 +112,7 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
     }
   }  
 
-  private void addNewBubble(int x, int y) {
+  private void addNewBubble(double x, double y) {
     this.removeBubble();
     bubbleView = (BubbleLayout) LayoutInflater.from(reactContext).inflate(R.layout.bubble_layout, null);
     bubbleView.setOnBubbleRemoveListener(new BubbleLayout.OnBubbleRemoveListener() {
@@ -109,15 +122,26 @@ public class RNFloatingBubbleModule extends ReactContextBaseJavaModule {
         sendEvent("floating-bubble-remove");
       }
     });
-    bubbleView.setOnBubbleClickListener(new BubbleLayout.OnBubbleClickListener() {
-
+    btn1 = (Button) bubbleView.findViewById(R.id.btn1);
+    text1 = (TextView) bubbleView.findViewById(R.id.textViewOrderDistance);
+    text1.append("Distância da coleta: " + x + "km");
+    text2 = (TextView) bubbleView.findViewById(R.id.textViewOrderTotalDistance);
+    text2.append("Percurso total: " + y + "km");
+    btnClose = (ImageView) bubbleView.findViewById(R.id.imageViewClose);
+    btnClose.setOnClickListener(new View.OnClickListener() {
       @Override
-      public void onBubbleClick(BubbleLayout bubble) {
-        sendEvent("floating-bubble-press");
+      public void onClick(View view) {
+        removeBubble();
+      }
+    });
+    btn1.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        sendEvent("aceitar pedido");
       }
     });
     bubbleView.setShouldStickToWall(true);
-    bubblesManager.addBubble(bubbleView, x, y);
+    bubblesManager.addBubble(bubbleView, 20, 20);
   }
 
   private boolean hasPermission(){

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="instruction">Instruções</string>
+    <string name="galery">Galeria</string>
+    <string name="take_picture">Tirar foto</string>
+    <string name="continue_word">Continuar</string>
+    <string name="ok">OK</string>
+    <string name="ok_i_got">OK, entendi!</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="some_problem">Ops!</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Salvar</string>
+    <string name="be_atention"><b>Atenção!</b></string>
+    <string name="tax_value">Valor do frete: %1$s</string>
+    <string name="distance">Distância:</string>
+    <string name="distance_km">km</string>
+    <string name="request_number">Pedido #</string>
+    <string name="confirm">Confirmar</string>
+    <string name="navigate">NAVEGAR</string>
+    <string name="split_value">DIVIDIR</string>
+    <string name="receipt">Comprovante</string>
+    <string name="withdrawal">Retirada:</string>
+    <string name="payment">Pagamento:</string>
+    <string name="delivery">Entrega:</string>
+    <string name="delivery_number">Endereço %1$s:</string>
+    <string name="collect">Coletar:</string>
+    <string name="checklist">CheckList:</string>
+    <string name="checklist_label">CHECKLIST</string>
+    <string name="comprov">COMPROV</string>
+    <string name="summary_order">Resumo do pedido:</string>
+    <string name="quantity">QTD: %1$s</string>
+    <string name="return_local">Retorno:</string>
+    <string name="end">Fim</string>
+    <string name="finish">Finalizar</string>
+
+</resources>

@@ -1,0 +1,520 @@
+<resources>
+    <string name="app_name">Shopper</string>
+    <string name="dialog_package">package</string>
+    <string name="google_maps_package">com.google.android.apps.maps</string>
+    <string name="google_maps_navigation_uri">google.navigation:q=%1$s&amp;mode=d</string>
+    <string name="date_format">dd/MM/yyyy</string>
+
+    <!--SplashScreen-->
+    <string name="token_is_empty">Falha no token de acesso, por favor tente novamente.</string>
+
+    <!--LoginActivity-->
+    <string name="login_hint_email">E-mail</string>
+    <string name="login_hint_password">Senha</string>
+    <string name="login_description">Entrar</string>
+    <string name="i_forgot_the_password"><u>Esqueci a senha</u></string>
+    <string name="i_dont_have_an_account">Não tenho uma conta!</string>
+    <string name="i_want_to_sign_up">QUERO ME CADASTRAR</string>
+    <string name="terms_of_use_privacy_policy"><u>Termos de Uso e Política de Privacidade</u></string>
+    <string name="login_unauthorized">E-mail ou senha inválida, por favor tente novamente!</string>
+    <string name="login_empty">E-mail ou senha não informados, por favor tente novamente!</string>
+    <string name="login_blocked">Usuário bloqueado, por favor entre em contato com o suporte</string>
+    <string name="login_internal_error">Ocorreu um erro interno, por favor tente novamente.</string>
+    <string name="login_not_found_error">Erro na leitura de E-mail e senha, por favor tente novamente</string>
+    <string name="login_password_recovery">O processo de recurepação de senha falhou, por favor entre em contato com o suporte.</string>
+    <string name="login_password_recovery_empty">E-mail não informado, por favor tente novamente!</string>
+    <string name="login_url_politic">https://www.alfreddelivery.com/termo-shopper.html</string>
+    <!-- RegisterActivity -->
+
+
+    <string name="draw_other_app_permission_denied">Sobreposição de tela não permitido.</string>
+    <string name="floating_order_accepted_success"><u>Pedido aceito com sucesso!</u></string>
+    <string name="floating_order_accepted_distance">Distância da coleta: </string>
+    <string name="floating_order_accepted_total_distance">Percurso total: </string>
+    <string name="floating_order_accpted_error">Ocorreu um erro ao aceitar o pedido. Tente novamente!</string>
+
+    <!-- WelcomeFragment -->
+    <string name="fragment_welcome_title">Seja bem-vindo, Shopper!</string>
+    <string name="fragment_welcome_description">O primeiro passo é criar seu login e senha. Utilize um e-mail real, ele será o login para acessar o App.</string>
+    <string name="fragment_welcome_terms">Declaro que li e concordo com os <u><font color='#FF0000'>Termos de Uso e Política de Privacidade</font></u>. As informações também estão disponíveis para consulta dentro do App.</string>
+    <string name="fragment_welcome_email_hint">E-mail*:</string>
+    <string name="fragment_welcome_password_hint">Senha*:</string>
+    <string name="fragment_welcome_confirm_password_hint">Confirmar senha*:</string>
+    <string name="fragment_welcome_error_email">Digite um e-mail válido.</string>
+    <string name="fragment_welcome_error_password">Sua senha precisa conter ao menos uma letra minúscula, maiúscula, um número e oito dígitos.</string>
+    <string name="fragment_welcome_error_confirm_password">Repita a senha anterior corretamente.</string>
+    <string name="fragment_welcome_error_terms">É necessário aceitar os termos de uso.</string>
+
+    <!-- PersonalDataFragment -->
+    <string name="fragment_personal_data_title">Dados pessoais</string>
+    <string name="fragment_personal_data_description">Informe seus dados reais. Eles são importantes para sua segurança e para que seu cadastro seja aprovado.</string>
+    <string name="fragment_personal_data_title_address">Endereço</string>
+    <string name="fragment_personal_data_address_description">Não se preocupe, todos os seus dados são confidenciais e estão seguros em nosso sistema.</string>
+    <string name="fragment_personal_data_name_hint">Nome completo*:</string>
+    <string name="fragment_personal_data_rg_hint">RG*:</string>
+    <string name="fragment_personal_data_cpf_hint">CPF*:</string>
+    <string name="fragment_personal_data_birthday_hint">Data de nascimento*:</string>
+    <string name="fragment_personal_data_phone_hint">Telefone*:</string>
+    <string name="fragment_personal_data_cep_hint">CEP*:</string>
+    <string name="fragment_personal_data_uf_hint">Estado*:</string>
+    <string name="fragment_personal_data_street_hint">Rua*:</string>
+    <string name="fragment_personal_data_number_hint">Número*:</string>
+    <string name="fragment_personal_data_complement_hint">Complemento:</string>
+    <string name="fragment_personal_data_district_hint">Bairro*:</string>
+    <string name="fragment_personal_data_city_hint">Cidade*:</string>
+    <string name="fragment_personal_data_error_name">Digite seu nome.</string>
+    <string name="fragment_personal_data_error_rg">Digite um RG válido.</string>
+    <string name="fragment_personal_data_error_cpf">Digite um CPF válido.</string>
+    <string name="fragment_personal_data_error_birthday">Digite uma data de nascimento válida.</string>
+    <string name="fragment_personal_data_error_phone">Digite um telefone válido.</string>
+    <string name="fragment_personal_data_error_cep">Digite um CEP válido.</string>
+    <string name="fragment_personal_data_error_state">Digite um estado válido.</string>
+    <string name="fragment_personal_data_error_street">Digite uma rua válida.</string>
+    <string name="fragment_personal_data_error_number">Digite um número válido.</string>
+    <string name="fragment_personal_data_error_district">Digite um bairro válido.</string>
+    <string name="fragment_personal_data_error_city">Digite uma cidade válida.</string>
+    <string name="fragment_personal_dialog_error_city">Não estamos operando em sua cidade.</string>
+    <string name="fragment_personal_dialog_error_cep_not_found">Cep não encontrado.</string>
+    <string name="fragment_personal_dialog_error_city_operation">Não foi possível carregar as cidades que operamos.</string>
+    <string name="fragment_personal_dialog_message_invalid_inputs">Você precisa preencher corretamente todos os campos obrigatórios.</string>
+
+    <string-array name="city">
+        <item>Cidade*</item>
+    </string-array>
+
+
+    <!-- VehicleFragment -->
+    <string name="fragment_vehicle_title">Tipo do veículo</string>
+    <string name="fragment_vehicle_description">Escolha qualquer um disponível. Você poderá trocar quando quiser dentro do App.</string>
+    <string name="fragment_vehicle_document_title">Fotos e documentos</string>
+    <string name="fragment_vehicle_document_description">Clique nos ícones e siga as instruções das fotos. \nCapriche na qualidade!</string>
+    <string name="fragment_vehicle_board_hint">Placa:</string>
+    <string name="fragment_vehicle_label_selfie">Foto rosto*</string>
+    <string name="fragment_vehicle_label_cnh">Foto CNH*</string>
+    <string name="fragment_vehicle_label_crv">Foto CRLV*</string>
+    <string name="fragment_vehicle_label_cnh_not_obrigatory">Foto CNH</string>
+    <string name="fragment_vehicle_label_crv_not_obrigatory">Foto CRLV</string>
+    <string name="fragment_vehicle_label_crv_description">(Documento veículo)</string>
+    <string name="fragment_vehicle_error_photo_selfie">Insira uma foto de seu rosto.</string>
+    <string name="fragment_vehicle_error_photo_cnh">Insira uma foto de sua CNH.</string>
+    <string name="fragment_vehicle_error_photo_crv">Insira uma foto de sua CRVL.</string>
+    <string name="fragment_vehicle_error_vehicle_type">Selecione o tipo de veículo.</string>
+    <string name="fragment_vehicle_error_vehicle_board">"Digite a placa do veículo"</string>
+    <string name="fragment_vehicle_spinner_type">Selecione o tipo de veículo</string>
+    <string name="fragment_vehicle_spinner_type_hint">Tipo do veículo:*</string>
+
+    <string-array name="vehicle">
+        <item>Motocicleta</item>
+        <item>Carro</item>
+        <item>Bicicleta</item>
+    </string-array>
+
+    <!-- PaymentFormFragment -->
+    <string name="fragment_payment_form_title">Dados para pagamento</string>
+    <string name="fragment_payment_form_description">É obrigatório que esta conta esteja em seu CPF, não aceitamos contas de terceiros.</string>
+    <string name="fragment_payment_form_agency_hint">Agência:</string>
+    <string name="fragment_payment_form_account_hint">Conta (com digito):</string>
+    <string name="fragment_payment_form_account_button_finish">Finalizar cadastro</string>
+    <string name="fragment_payment_form_error_account">Digite uma conta válida.</string>
+    <string name="fragment_payment_form_error_agency">Digite uma agêcia válida.</string>
+    <string name="fragment_payment_form_error_bank">Selecione seu banco.</string>
+    <string name="fragment_payment_form_error_type">Selecione o tipo de conta.</string>
+    <string name="fragment_payment_form_spinner_bank_title">Selecione o banco</string>
+    <string name="fragment_payment_form_spinner_type_title">Selecione o tipo de conta</string>
+    <string name="fragment_payment_form_spinner_bank_hint">Banco</string>
+    <string name="fragment_payment_form_spinner_type_hint">Tipo</string>
+
+    <string-array name="bank">
+        <item>Não selecionado</item>
+        <item>1	- Banco do Brasil S.A.</item>
+        <item>002 - Caixa ecônomica federal</item>
+        <item>237 - Banco Bradesco S.A.</item>
+        <item>341 -	Banco Itaú Unibanco S.A.</item>
+        <item>33 - Banco Santander (Brasil) S.A.</item>
+        <item>104 - Caixa Econômica Federal</item>
+        <item>77 - Banco Inter S.A.</item>
+        <item>3	- Banco da Amazônia S.A.</item>
+        <item>4	- Banco do Nordeste do Brasil S.A.</item>
+        <item>7	- Banco Nacional de Desenvolvimento E. e Social – BNDES</item>
+        <item>10 - Credicoamo Crédito Rural Cooperativa</item>
+        <item>11 - Credit Suisse Hedging-Griffo Corretora de Valores S.A.</item>
+        <item>12 -	Banco Inbursa S.A.</item>
+        <item>14 - Natixis Brasil S.A. Banco Múltiplo</item>
+        <item>15 - UBS Brasil Corretora de Câmbio, Títulos e Valores Mobiliários S.A.</item>
+        <item>16 - Cooperativa de Crédito Mútuo dos Despachantes de Trânsito de Sta.Catarina e RS</item>
+        <item>17 - BNY Mellon Banco S.A.</item>
+        <item>18 - Banco Tricury S.A.</item>
+        <item>21 - Banco do Estado do Espírito Santo – Baneste S.A.</item>
+        <item>24 - Banco Bandepe S.A.</item>
+        <item>25 - Banco Alfa S.A.</item>
+        <item>29 - Banco Itaú Consignado S.A.</item>
+        <item>36 - Banco Bradesco BBI S.A.</item>
+        <item>37 - Banco do Estado do Pará S.A.</item>
+        <item>40 - Banco Cargill S.A.</item>
+        <item>41 - Banco do Estado do Rio Grande do Sul S.A.</item>
+        <item>47 - Banco do Estado de Sergipe S.A.</item>
+        <item>60 - Confidence Corretora de Câmbio S.A.</item>
+        <item>62 - Hipercard Banco Múltiplo S.A.</item>
+        <item>63 - Banco Bradescard S.A.</item>
+        <item>64 - Goldman Sachs do Brasil Banco Múltiplo S.A.</item>
+        <item>65 - Banco Andbank (Brasil) S.A.</item>
+        <item>66 - Banco Morgan Stanley S.A.</item>
+        <item>69 - Banco Crefisa S.A.</item>
+        <item>70 - Banco de Brasília S.A. (BRB)</item>
+        <item>74 - Banco J. Safra S.A.</item>
+        <item>75 - Banco ABN Amro S.A.</item>
+        <item>76 - Banco KDB S.A.</item>
+        <item>78 - Haitong Banco de Investimento do Brasil S.A.</item>
+        <item>79 - Banco Original do Agronegócio S.A.</item>
+        <item>80 - BT Corretora de Câmbio Ltda.</item>
+        <item>81 - Banco Brasileiro de Negócios S.A. – BBN</item>
+        <item>82 - Banco Topázio S.A.</item>
+        <item>83 - Banco da China Brasil S.A.</item>
+        <item>84 - Uniprime Norte do Paraná – Cooperativa de Crédito Ltda.</item>
+        <item>85 - Cooperativa Central de Crédito Urbano – Cecred</item>
+        <item>88 - Banco Randon S.A.</item>
+        <item>89 - Cooperativa de Crédito Rural da Região da Mogiana</item>
+        <item>91 - Central de Cooperativas de Economia e Crédito Mútuo do Estado RS – Unicred</item>
+        <item>92 - Brickell (BRK) S.A. Crédito, Financiamento e Investimento</item>
+        <item>93 - Pólocred Sociedade de Crédito ao Microempreendedor e Empresa de Pequeno Porte</item>
+        <item>94 - Banco Finaxis S.A.</item>
+        <item>95 - Banco Confidence de Câmbio S.A.</item>
+        <item>96 - Banco BMFBovespa </item>
+        <item>97 - Cooperativa Central de Crédito Noroeste Brasileiro Ltda. (CentralCredi)</item>
+        <item>99 - Uniprime Central – Central Interestadual de Cooperativas de Crédito Ltda.</item>
+        <item>100 -	Planner Corretora de Valores S.A.</item>
+        <item>101 -	Renascença Distribuidora de Títulos e Valores Mobiliários Ltda.</item>
+        <item>102 -	XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S/A</item>
+        <item>105 -	Lecca Crédito, Financiamento e Investimento S/A</item>
+        <item>107 -	Banco Bocom BBM S.A.</item>
+        <item>108 -	PortoCred S.A. Crédito, Financiamento e Investimento</item>
+        <item>111 -	Oliveira Trust Distribuidora de Títulos e Valores Mobiliários S.A.</item>
+        <item>113 -	Magliano S.A. Corretora de Cambio e Valores Mobiliarios</item>
+        <item>114 -	Central Cooperativa de Crédito no Estado do Espírito Santo – CECOOP</item>
+        <item>117 -	Advanced Corretora de Câmbio Ltda.</item>
+        <item>118 -	Standard Chartered Bank (Brasil) S.A. Banco de Investimento</item>
+        <item>119 -	Banco Western Union do Brasil S.A.</item>
+        <item>120 -	Banco Rodobens S.A.</item>
+        <item>121 -	Banco Agibank S.A.</item>
+        <item>122 -	Banco Bradesco BERJ S.A.</item>
+        <item>124 -	Banco Woori Bank do Brasil S.A.</item>
+        <item>125 -	Banco Brasil Plural S.A. – Banco Múltiplo</item>
+        <item>126 -	BR Partners Banco de Investimento S.A.</item>
+        <item>127 -	Codepe Corretora de Valores e Câmbio S.A.</item>
+        <item>128 -	MS Bank S.A. Banco de Câmbio</item>
+        <item>129 -	UBS Brasil Banco de Investimento S.A.</item>
+        <item>130 -	Caruana S.A. Sociedade de Crédito, Financiamento e Investimento</item>
+        <item>131 -	Tullett Prebon Brasil Corretora de Valores e Câmbio Ltda.</item>
+        <item>132 -	ICBC do Brasil Banco Múltiplo S.A.</item>
+        <item>133 -	Cresol – Confederação Nacional Cooperativas Centrais de Crédito e Econ Familiar</item>
+        <item>134 -	BGC Liquidez Distribuidora de T. e Valores Mobiliários Ltda.</item>
+        <item>135 -	Gradual Corretora de Câmbio, Títulos e Valores Mobiliários S.A.</item>
+        <item>136 -	Confederação Nacional das Cooperativas Centrais Unicred Ltda (Unicred do Brasil)</item>
+        <item>137 -	Multimoney Corretora de Câmbio Ltda</item>
+        <item>138 -	Get Money Corretora de Câmbio S.A.</item>
+        <item>139 -	Intesa Sanpaolo Brasil S.A. – Banco Múltiplo</item>
+        <item>140 -	Easynvest – Título Corretora de Valores SA</item>
+        <item>142 -	Broker Brasil Corretora de Câmbio Ltda.</item>
+        <item>143 -	Treviso Corretora de Câmbio S.A.</item>
+        <item>144 -	Bexs Banco de Câmbio S.A.</item>
+        <item>145 -	Levycam – Corretora de Câmbio e Valores Ltda.</item>
+        <item>146 -	Guitta Corretora de Câmbio Ltda.</item>
+        <item>149 -	Facta Financeira S.A. – Crédito Financiamento e Investimento</item>
+        <item>157 -	ICAP do Brasil Corretora de Títulos e Valores Mobiliários Ltda.</item>
+        <item>159 -	Casa do Crédito S.A. Sociedade de Crédito ao Microempreendedor</item>
+        <item>163 -	Commerzbank Brasil S.A. – Banco Múltiplo</item>
+        <item>169 -	Banco Olé Bonsucesso Consignado S.A.</item>
+        <item>172 -	Albatross Corretora de Câmbio e Valores S.A</item>
+        <item>173 -	BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A.</item>
+        <item>174 -	Pernambucanas Financiadora S.A. Crédito, Financiamento e Investimento</item>
+        <item>177 -	Guide Investimentos S.A. Corretora de Valores</item>
+        <item>182 -	Dacasa Financeira S/A – Sociedade de Crédito, Financiamento e Investimento</item>
+        <item>183 -	Socred S.A. – Sociedade de Crédito ao Microempreendedor</item>
+        <item>184 -	Banco Itaú BBA S.A.</item>
+        <item>188 -	Ativa Investimentos S.A. Corretora de Títulos Câmbio e Valores</item>
+        <item>189 -	HS Financeira S/A Crédito, Financiamento e Investimentos</item>
+        <item>190 -	Servicoop – Cooperativa de Economia e Crédito Mútuo dos Servidores Estaduais do Rio</item>
+        <item>191 -	Nova Futura Corretora de Títulos e Valores Mobiliários Ltda.</item>
+        <item>194 - Parmetal Distribuidora de Títulos e Valores Mobiliários Ltda.</item>
+        <item>196 -	Fair Corretora de Câmbio S.A.</item>
+        <item>197 -	Stone Pagamentos S.A.</item>
+        <item>204 -	Banco Bradesco Cartões S.A.</item>
+        <item>208 -	Banco BTG Pactual S.A.</item>
+        <item>212 -	Banco Original S.A.</item>
+        <item>213 -	Banco Arbi S.A.</item>
+        <item>217 -	Banco John Deere S.A.</item>
+        <item>218 -	Banco BS2 S.A.</item>
+        <item>222 -	Banco Credit Agricole Brasil S.A.</item>
+        <item>224 -	Banco Fibra S.A.</item>
+        <item>233 -	Banco Cifra S.A.</item>
+        <item>241 -	Banco Clássico S.A.</item>
+        <item>243 -	Banco Máxima S.A.</item>
+        <item>246 -	Banco ABC Brasil S.A.</item>
+        <item>248 -	Banco Boavista Interatlântico S.A.</item>
+        <item>249 -	Banco Investcred Unibanco S.A.</item>
+        <item>250 -	Banco de Crédito e Varejo S.A. – BCV</item>
+        <item>253 -	Bexs Corretora de Câmbio S.A.</item>
+        <item>254 -	Paraná Banco S.A.</item>
+        <item>260 -	Nu Pagamentos S.A</item>
+        <item>265 -	Banco Fator S.A.</item>
+        <item>266 -	Banco Cédula S.A.</item>
+        <item>268 -	Barigui Companhia Hipotecária</item>
+        <item>269 -	HSBC Brasil S.A. Banco de Investimento</item>
+        <item>271 -	IB Corretora de Câmbio, Títulos e Valores Mobiliários Ltda.</item>
+        <item>300 -	Banco de La Nacion Argentina</item>
+        <item>318 -	Banco BMG S.A.</item>
+        <item>320 -	China Construction Bank (Brasil) Banco Múltiplo S.A.</item>
+        <item>366 -	Banco Société Générale Brasil S.A.</item>
+        <item>370 -	Banco Mizuho do Brasil S.A.</item>
+        <item>376 -	Banco J. P. Morgan S.A.</item>
+        <item>389 -	Banco Mercantil do Brasil S.A.</item>
+        <item>394 -	Banco Bradesco Financiamentos S.A.</item>
+        <item>399 -	Kirton Bank S.A. (Banco Múltiplo)</item>
+        <item>412 -	Banco Capital S.A.</item>
+        <item>422 -	Banco Safra S.A.</item>
+        <item>456 -	Banco MUFG Brasil S.A.</item>
+        <item>464 -	Banco Sumitomo Mitsui Brasileiro S.A.</item>
+        <item>473 -	Banco Caixa Geral – Brasil S.A.</item>
+        <item>477 -	Citibank N.A.</item>
+        <item>479 -	Banco ItauBank S.A</item>
+        <item>487 -	Deutsche Bank S.A. – Banco Alemão</item>
+        <item>488 -	JPMorgan Chase Bank, National Association</item>
+        <item>492 -	ING Bank N.V.</item>
+        <item>494 -	Banco de La Republica Oriental del Uruguay</item>
+        <item>495 -	Banco de La Provincia de Buenos Aires</item>
+        <item>505 -	Banco Credit Suisse (Brasil) S.A.</item>
+        <item>505 -	Banco de Investimento Credit Suisse (Brasil) S.A.</item>
+        <item>545 -	Senso Corretora de Câmbio e Valores Mobiliários S.A.</item>
+        <item>600 -	Banco Luso Brasileiro S.A.</item>
+        <item>604 -	Banco Industrial do Brasil S.A.</item>
+        <item>610 -	Banco VR S.A.</item>
+        <item>611 -	Banco Paulista S.A.</item>
+        <item>612 -	Banco Guanabara S.A.</item>
+        <item>613 -	Omni Banco S.A.</item>
+        <item>623 -	Banco Pan S.A.</item>
+        <item>626 -	Banco Ficsa S.A.</item>
+        <item>630 -	Banco Intercap S.A.</item>
+        <item>633 -	Banco Rendimento S.A.</item>
+        <item>634 -	Banco Triângulo S.A.</item>
+        <item>637 -	Banco Sofisa S.A.</item>
+        <item>641 -	Banco Alvorada S.A.</item>
+        <item>643 -	Banco Pine S.A.</item>
+        <item>652 -	Banco Itaú Unibanco Holding S.A.</item>
+        <item>653 -	Banco Indusval S.A.</item>
+        <item>654 -	Banco A.J. Renner S.A.</item>
+        <item>655 -	Banco Votorantim S.A.</item>
+        <item>707 -	Banco Daycoval S.A.</item>
+        <item>712 -	Banco Ourinvest S.A.</item>
+        <item>719 -	Banco Internacional do Funchal (Brasil) S.A. – Banif</item>
+        <item>735 -	Banco Neon S.A.</item>
+        <item>739 -	Banco Cetelem S.A.</item>
+        <item>740 -	Banco Barclays S.A.</item>
+        <item>741 -	Banco Ribeirão Preto S.A.</item>
+        <item>743 -	Banco Semear S.A.</item>
+        <item>745 -	Banco Citibank S.A.</item>
+        <item>746 -	Banco Modal S.A.</item>
+        <item>747 -	Banco Rabobank International Brasil S.A.</item>
+        <item>748 -	Banco Cooperativo Sicredi S.A.</item>
+        <item>751 -	Scotiabank Brasil S.A. Banco Múltiplo</item>
+        <item>752 -	Banco BNP Paribas Brasil S.A.</item>
+        <item>753 -	Novo Banco Continental S.A. – Banco Múltiplo</item>
+        <item>754 -	Banco Sistema S.A.</item>
+        <item>755 -	Bank of America Merrill Lynch Banco Múltiplo S.A.</item>
+        <item>756 -	Banco Cooperativo do Brasil S.A. – Bancoob</item>
+        <item>757 -	Banco Keb Hana do Brasil S.A.</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Não selecionado</item>
+        <item>Corrente</item>
+        <item>Poupança</item>
+    </string-array>
+
+    <!-- OrderAttendanceSuccessFragment -->
+    <string name="fragment_completed_title">Cadastro concluído</string>
+    <string name="fragment_completed_description">Parabéns! Seu cadastro entrou na nossa lista de Shoppers. \n \nVocê ficará inativo até ser aprovado. \n \nVamos analisar todas as informações e avisaremos assim que possível.</string>
+    <string name="fragment_completed_button_ok">Show, entendi!</string>
+
+    <!-- LoginFragment -->
+    <string name="fragment_login_hint_enter_with_new_password">Para alterar a senha, digite a senha atual:</string>
+    <string name="fragment_login_hint_new_password">Digite a nova senha:</string>
+    <string name="fragment_login_hint_confirm_password">Confirme nova senha:</string>
+    <string name="fragment_login_dialog_message_error_password">Senha antiga incorreta!</string>
+    <string name="fragment_login_error_password">Digite a senha atual corretamente.</string>
+
+    <!-- MyDataActivity -->
+    <string name="activity_my_data_title">Meus dados</string>
+    <string name="activity_my_data_page_login_title">Login</string>
+    <string name="activity_my_data_page_personal_data_title">Dados Pessoais</string>
+    <string name="activity_my_data_page_document_title">Documentos</string>
+    <string name="activity_my_data_page_payment_title">Pagamentos</string>
+
+    <!-- MyRequestActivity -->
+    <string name="activity_my_request_title">Meus pedidos</string>
+    <string name="activity_my_request_subtitle">Total faturado nos últimos 30 dias: %1$s \n<font color='#E61E1E'>Total a receber: %2$s</font></string>
+    <string name="activity_my_request_enter_with_date">Preencha a data inicial e final.</string>
+    <string name="activity_my_request_filter_clear"><u>Limpar filtros</u></string>
+    <string name="activity_my_request_check_date">Data inicial não pode ser superior a data final.</string>
+    <string name="activity_my_request_check_date_validity">Data inválida.</string>
+
+    <!-- OrderInAttendanceActivity -->
+    <string name="activity_order_in_attendance_title">#%1$s - Pedido em Atendimento</string>
+
+    <!-- OrderInAttendanceFragment -->
+    <string name="activity_order_in_attendance_client_name">Cliente: %1$s</string>
+    <string name="activity_order_in_attendance_client_phone">Telefone: <u>%1$s</u></string>
+    <string name="activity_order_in_attendance_provider">Fornecedor: %1$s </string>
+    <string name="activity_order_in_attendance_provider_address">%1$s</string>
+    <string name="activity_order_in_attendance_payment_necessary_machine">Pagamento: %1$s. \nNecessário levar maquininha!</string>
+    <string name="activity_order_in_attendance_payment_money">Na entrega: %1$s.</string>
+    <string name="activity_order_in_attendance_init_payment">Pagamento: Na entrega com %1$s</string>
+    <string name="activity_order_in_attendance_payment">Na entrega em %1$s</string>
+    <string name="activity_order_in_attendance_send_address">%1$s, %2$s - %3$s \n%4$s</string>
+    <string name="activity_order_in_attendance_click_next_step">Para ir para o próximo passo clique e segure o botão!</string>
+    <string name="activity_order_in_attendance_arrived_local">Cheguei ao local</string>
+    <string name="activity_order_in_attendance_confirm_checklist">Confirme o CheckList</string>
+    <string name="activity_order_in_attendance_warn_arrived_local">Avisar o cliente que cheguei</string>
+    <string name="activity_order_in_attendance_send_photo_comprov">Envie a foto do comprovante da máquina</string>
+    <string name="activity_order_in_attendance_finish_payment">Finalizar pagamento</string>
+    <string name="activity_order_in_attendance_finish_send">Finalizar entrega</string>
+    <string name="activity_order_in_attendance_payment_online_need_alfreed_card">Pagamento Online. Necessário pagamento com cartão Alfred.</string>
+    <string name="activity_order_in_attendance_payment_online">Pagamento Online.</string>
+    <string name="activity_order_in_attendance_payment_necessary_machine_provider">Na entrega: %1$s. \nUtilize a maquininha do fornecedor.</string>
+    <string name="activity_order_in_attendance_dialog_title_send_title">Atenção! O pagamento deste pedido será na entrega.</string>
+    <string name="activity_order_in_attendance_dialog_title_send_message">Lembre-se de pegar a maquininha de cartão ou troco com o fornecedor.</string>
+    <string name="activity_order_in_attendance_dialog_title_return_title">Deseja finalizar a entrega?</string>
+    <string name="activity_order_in_attendance_dialog_title_return_message">Tenha certeza que já retornou o dinheiro ou a maquinha ao estabelecimento.</string>
+    <string name="activity_order_in_attendance_dialog_title_failed_return_title">Ops! Não foi possível finalizar.</string>
+    <string name="activity_order_in_attendance_dialog_title_failed_return_message">Sua localização atual está distante do endereço de retorno. Clique novamente quando estiver próximo.</string>
+    <string name="activity_order_in_attendance_dialog_title_warn_title">O cliente foi avisado!</string>
+    <string name="activity_order_in_attendance_dialog_title_warn_message">Caso seja necessário, você também poderá entrar em contato pelo chat ou pelo telefone.</string>
+    <string name="activity_order_in_attendance_dialog_title_cofirm_conclude_title">Finalizar Entrega</string>
+    <string name="activity_order_in_attendance_dialog_title_confirm_conclude_message">Deseja finalizar a entrega?</string>
+    <string name="activity_order_in_attendance_warn_address">Cheguei ao endereço %1$s</string>
+    <string name="activity_order_in_attendance_observations">Sem observações</string>
+    <string name="activity_order_in_attendance_payment_value">Passe o valor: %1$s</string>
+    <string name="activity_order_in_attendance_payment_money_value">Valor: %1$s</string>
+    <string name="activity_order_in_attendance_order_message">Obs: %1$s</string>
+
+    <!-- CheckListActivity -->
+    <string name="activity_checklist_dialog_confirm_value">Você tem certeza desse valor?</string>
+    <string name="activity_checklist_dialog_confirm_value_info">Após a alteração, <b>não será possível</b> voltar ao anterior.\nTenha certeza que o novo valor está correto!</string>
+    <string name="activity_checklist_dialog_new_vale">Insira o valor final da compra para que seja aplicado o reajuste.</string>
+    <string name="activity_checklist_title">Checklist</string>
+    <string name="activity_checklist_text_view_label_title">Marque as opções e facilite seu controle!</string>
+    <string name="activity_checklist_text_view_label_estimate_value">Valor Total Estimado:</string>
+    <string name="activity_checklist_text_view_label_different_value">Valor diferente? Clique aqui!</string>
+    <string name="activity_checklist_text_view_label_final_value">VALOR FINAL TOTAL DA COMPRA:</string>
+    <string name="activity_checklist_text_view_label_cancel_new_value">Cancelar Reajuste</string>
+    <string name="activity_checklist_text_view_label_save_new_value">Salvar novo valor</string>
+    <string name="activity_checklist_button_finish_checklist">CHECKLIST CONCLUÍDO</string>
+    <string name="activity_checklist_complement_price_bold_view"><b>$ </b></string>
+
+    <!-- SplitValueActivity -->
+    <string name="activity_split_value_text_view_label_title">DIVIDIR COBRANÇA</string>
+    <string name="activity_split_value_complete_payment">CONCLUIR PAGAMENTO</string>
+
+    <!-- CheckList Adapter -->
+    <string name="adapter_checklist_product_options">Opções: %1$s</string>
+
+    <!-- ChatActivity -->
+    <string name="activity_chat_edittext_message_hint">Digite sua mensagem</string>
+
+
+    <!-- PhotoActivity -->
+    <string name="activity_photo_selfie_instruction">Tire uma foto bem iluminada, com camiseta, e que mostre bem seu rosto. Evite óculos, capacete ou careta. A foto deve ser recente!</string>
+    <string name="activity_photo_cnh_instruction">Tire uma foto bem iluminada, com o documento aberto (como na foto de exemplo). Não corte nenhuma parte do documento.</string>
+    <string name="activity_photo_crv_instruction">Tire uma foto bem iluminada, com o documento aberto (como na foto de exemplo). Certifique-se que suas informações estão visíveis.</string>
+    <string name="activity_photo_error_load_message">Erro ao carregar a imagem. Por favor, tente novamente!</string>
+
+    <!--InativeUserFragment-->
+    <string name="inative_user_fragment_title">Usuário inativo</string>
+    <string name="inative_user_fragment_status">Você está inativo.</string>
+    <string name="inative_user_fragment_description">Você não está ativo para receber pedidos por enquanto.</string>
+    <string name="inative_user_fragment_support_description">Qualquer dúvida, entre em contato com <u>suporte@alfreddelivery.com</u></string>
+
+    <!--UserOfflineFragment-->
+    <string name="user_offline_fragment_title">Usuário offline</string>
+    <string name="user_offline_fragment_status">Parece que você está Offline</string>
+    <string name="user_offline_fragment_description">Enquanto estiver Offline, você não receberá pedidos.</string>
+
+    <!-- Generic messages -->
+    <string name="error_generic_request">Algo imprevisto ocorreu.</string>
+    <string name="error_generic_internet_request">Algo imprevisto ocorreu. Verifique sua conexao.</string>
+    <string name="access_camera">Precisamos de acesso a sua câmera!</string>
+    <string name="access_storange">Precisamos de acesso a sua galeria de fotos!</string>
+    <string name="access_need_be_manual">Devido a várias tentativas, é necessário que você permita o acesso manualmente.</string>
+
+    <!--WaitingForOrdersFragment-->
+    <string name="waiting_for_orders_fragment_title">Aguardando pedido</string>
+    <string name="waiting_for_orders_fragment_status">Aguardando pedidos</string>
+    <string name="waiting_for_orders_fragment_description">Nenhum pedido disponível na sua localização.</string>
+
+    <!--OrderAcceptedFragment-->
+    <string name="order_accepted_fragment_title">Aceitar pedido</string>
+    <string name="order_accepted_fragment_route_description">Percurso total:</string>
+    <string name="order_accepted_fragment_location_primary">Você está aprox. </string>
+    <string name="order_accepted_fragment_location_second">do endereço de coleta</string>
+    <string name="order_accepted_fragment_new_delivery_description">Oba! Você tem uma nova corrida.</string>
+    <string name="order_accepted_fragment_alfred_card">Pagamento com cartão Alfred</string>
+    <string name="order_accepted_fragment_order_info">Pedido %1$s - %2$s</string>
+
+    <!--Drawer-->
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
+    <string name="mipmap_user_saldo">Hoje você já ganhou: <![CDATA[<b>R$ %1$s</b>]]></string>
+    <string name="mipmap_item_home">Home</string>
+    <string name="mipmap_item_data">Meus dados</string>
+    <string name="mipmap_item_delivery">Minhas entregas</string>
+    <string name="mipmap_item_support">Suporte</string>
+    <string name="mipmap_item_exit">Sair</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!---Toolbar-->
+    <string name="toolbar_switch_status_inative">Usuário inativo</string>
+    <string name="toolbar_switch_status_online">Online</string>
+    <string name="toolbar_switch_status_offline">Offline</string>
+
+    <string name="google_maps_key">AIzaSyAICH792yo1EjnWfMm_0Uw21K67y30zUSg</string>
+
+    <!--HomeActivity-->
+    <string name="home_activity_order_receiver">Alterado com Sucesso!</string>
+    <string name="access_locale">Precisamos de acesso a localização!</string>
+    <string name="home_new_order_notification">Novo Pedido</string>
+    <string name="home_activity_get_ou_app">\nDeseja encerrar o aplicativo e ficar <b>offline</b>?\n</string>
+    <string name="access_locale_whole_time">Para uso do App, precisamos de acesso à sua localização, que será utilizada "<b>somente</b>" enquanto você estiver "<b>online</b>", recebendo pedidos. "\n\n" Ao escolher a opção "\"Permitir o tempo todo\"", usaremos sua localização em "<b>segundo plano</b>" para buscar pedidos próximos a você. "\n\n" Escolha a opção ""<b>Permitir o tempo todo</b>"" no seu celular.</string>
+
+    <!-- SupportActivity -->
+    <string name="activity_support_title">Suporte</string>
+    <string name="item_support_call_description">Chamar</string>
+    <string name="item_support_turn_on_description">Ligar</string>
+    <string name="item_support_send_description">Enviar</string>
+    <string name="item_support_term_of_use_description">Clique para ver nossos</string>
+    <string name="item_support_term_of_use"><u>Termos de Uso e Política de Privacidade</u></string>
+    <string name="item_support_build_app_description">Versão do Aplicativo:</string>
+    <string name="access_call">Precisamos de acesso a chamadas!</string>
+    <string name="support_whatsapp_url_intent">https://api.whatsapp.com/send?phone=+55</string>
+    <string name="support_send_to_mail_intent">Enviando para E-mail</string>
+    <string name="support_send_to_mail_scheme">mailto</string>
+
+    <!-- ItemAdapterOpenOrder -->
+    <string name="item_adapter_open_order_button_description">Clique para continuar</string>
+    <string name="item_adapter_open_order_description">Pedido %1$s</string>
+    <string name="item_adapter_open_order_cliente_description">Cliente:</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <!-- ViewHolderSeeMore -->
+    <string name="loading"> Carregando... </string>
+
+    <!-- Donus order -->
+    <string name="activity_order_in_attendance_dialog_donus_order"> Neste pedido é <b>obrigatório</b> utilizar a <b>maquininha Donus</b></string>
+</resources>

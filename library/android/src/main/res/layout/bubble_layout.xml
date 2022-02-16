@@ -1,17 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.txusballesteros.bubbles.BubbleLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clipChildren="false"
     android:clipToPadding="false">
 
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:background="@drawable/profile_decorator"
-        android:src="@drawable/bubble_icon"
-        android:scaleType="centerCrop"/>
+<RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+          <LinearLayout
+            android:id="@+id/expanded_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_radius_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_radius_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/DefaultTextViewAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Nova corrida, Shopper!"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+              <ImageView
+                  android:id="@+id/imageViewClose"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginRight="10dp"
+                  android:tint="@android:color/white"
+                  android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewOrderAccepted"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_home_order_accepted"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewOrderDistance"
+                        style="@style/DefaultTextViewAppearance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textViewOrderTotalDistance"
+                        style="@style/DefaultTextViewAppearance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text=""
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+              <Button
+                  android:id="@+id/btn1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#283c64"
+                  android:text="Aceitar Pedido"
+                  android:textColor="#fff"
+                  android:textStyle="bold" />
+          </LinearLayout>
+        </RelativeLayout>
+
 </com.txusballesteros.bubbles.BubbleLayout>
